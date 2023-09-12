@@ -38,7 +38,7 @@ export default class Home extends Component {
               <div className="offer-container">
                 <p style={{ color: "red" }}>
                   $32
-                  <span style={{ color: "gray" }}>
+                  <span style={{ color: "gray" ,marginLeft:'8px',fontSize:'14px'}}>
                     <s>$64</s>
                   </span>
                 </p>
@@ -55,33 +55,33 @@ export default class Home extends Component {
                 <li className="card">
                   <BsShieldCheck size={20} />
                   <p style={{fontWeight:'600'}}>100%</p>
-                  <p style={{ color: "gray" }}>GENUNE!</p>
+                  <p style={{ color: "gray",fontSize:'10px' }}>GENUNE!</p>
                 </li>
                 <li className="card">
                   <FcMoneyTransfer size={20} />
                   <p  style={{fontWeight:'600'}}>CASH</p>
-                  <p style={{ color: "gray" }}>ON DELIVERY</p>
+                  <p style={{ color: "gray",fontSize:'10px'}}>ON DELIVERY</p>
                 </li>
                 <li className="card">
                   <CgArrowsExchange size={20} />
                   <p style={{fontWeight:'600'}}>14 DAYS</p>
-                  <p style={{ color: "gray" }}>EXCHANGE</p>
+                  <p style={{ color: "gray",fontSize:'10px' }}>EXCHANGE</p>
                 </li>
                 <li className="card">
                   <FaTruckFast size={20} />
                   <p style={{fontWeight:'600'}}>
-                    FREE<span style={{ color: "red" }}>*</span>
+                    FREE<span style={{ color: "red",fontSize:'10px' }}>*</span>
                   </p>
-                  <p style={{ color: "gray" }}>DELIVERY</p>
+                  <p style={{ color: "gray",fontSize:'10px'}}>DELIVERY</p>
                 </li>
               </ul>
-              <div className="footer-section">
+              <footer className="footer-section">
                 <p className="cart-count">{count}</p>
-                <button className="fotter-button" onClick={this.onHandleCart}>
+                <button className="footer-button" onClick={this.onHandleCart}>
                     <BsHandbag size={25} color="#fff"/>
                   ADD TO BAG
                 </button>
-              </div>
+              </footer>
             </div>
           </div>
         </div>
